@@ -1,10 +1,10 @@
 package ouyj.hyena.com.asynctaskdemo;
 
 import android.os.AsyncTask;
-public class MyAsyncTask extends AsyncTask<String,Integer,String> {
+public class MyAsyncTask extends AsyncTask<String,Integer,Boolean> {
 
     @Override
-    protected String doInBackground(String... strings) {
+    protected Boolean doInBackground(String... strings) {
         return null;
     }
 
@@ -13,8 +13,8 @@ public class MyAsyncTask extends AsyncTask<String,Integer,String> {
         super.onPreExecute();
     }
     @Override
-    protected void onPostExecute(String s) {
-        super.onPostExecute(s);
+    protected void onPostExecute(Boolean b) {
+        super.onPostExecute(b);
     }
     @Override
     protected void onProgressUpdate(Integer... values) {
